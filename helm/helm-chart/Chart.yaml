@@ -1,0 +1,8 @@
+apiVersion: v2
+name: azure-cli-with-csi
+description: A Helm chart for csi driver inspection
+version: 1.0.0
+appVersion: 1.0.0
+maintainers:
+  - name: Shogo Shimahara
+    email: shogo811dq@gmail.com

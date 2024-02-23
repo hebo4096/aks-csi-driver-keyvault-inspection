@@ -1,0 +1,23 @@
+image:
+  repository: mcr.microsoft.com/azure-cli
+  tag: latest
+  pullPolicy: IfNotPresent
+
+replicaNum: 1
+
+namespace: default
+
+serviceAccountName: your-sa
+
+# Helm values configurations for AKS Workload Identity
+workloadIdentity:
+  enabled: true
+  clientId: 00000000-0000-0000-0000-000000000000
+
+# Helm values configurations for CSI Driver
+csiDriver:
+  enabled: true
+  clientId: 00000000-0000-0000-0000-000000000000
+  tenantId: 00000000-0000-0000-0000-000000000000
+  keyVaultName: hogehoge
+  mountPath: "/mnt/secrets-store"
